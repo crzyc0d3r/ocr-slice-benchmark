@@ -1,0 +1,135 @@
+{
+  "parsers": {
+    "simulated-complete": {
+      "ledger-p1": {
+        "pages": [
+          {
+            "html": "<h2>Summary</h2><p>Revenue rose 12%</p><table><tr><th>Item</th><th>Q3</th></tr><tr><th>Revenue</th><td>4.2</td></tr></table><h2>Outlook</h2><footer>Confidential</footer>",
+            "blocks": [
+              {
+                "label": "heading",
+                "bbox": [
+                  0,
+                  0,
+                  1,
+                  0.1
+                ],
+                "text": "Summary"
+              }
+            ]
+          }
+        ]
+      },
+      "note-p1": {
+        "pages": [
+          {
+            "html": "<h2>Observation</h2><p>Sample stable at 20 C</p><h2>Follow-up</h2><p>Check calibration</p>",
+            "blocks": [
+              {
+                "label": "heading",
+                "bbox": [
+                  0,
+                  0,
+                  1,
+                  0.1
+                ],
+                "text": "Observation"
+              }
+            ]
+          }
+        ]
+      },
+      "form-p1": {
+        "pages": [
+          {
+            "html": "<h2>Expense claim</h2><p>Total paid 125.00</p><p>Approved</p>",
+            "blocks": [
+              {
+                "label": "heading",
+                "bbox": [
+                  0,
+                  0,
+                  1,
+                  0.1
+                ],
+                "text": "Expense claim"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "simulated-table-focused": {
+      "ledger-p1": {
+        "pages": [
+          {
+            "html": "<h2>Summary</h2><p>Revenue rose 12%</p><table><tr><th>Item</th><th>Q3</th></tr><tr><th>Revenue</th><td>4.2</td></tr></table><h2>Outlook</h2><footer>Confidential</footer>",
+            "blocks": [
+              {
+                "label": "heading",
+                "bbox": [
+                  0,
+                  0,
+                  1,
+                  0.1
+                ],
+                "text": "Summary"
+              }
+            ]
+          }
+        ]
+      },
+      "note-p1": {
+        "pages": [
+          {
+            "html": "<p>Unreadable</p>",
+            "blocks": []
+          }
+        ]
+      },
+      "form-p1": {
+        "pages": [
+          {
+            "html": "<h2>Expense claim</h2>",
+            "blocks": [
+              {
+                "label": "heading",
+                "bbox": [
+                  0,
+                  0,
+                  1,
+                  0.1
+                ],
+                "text": "Expense claim"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "simulated-incomplete": {
+      "ledger-p1": {
+        "pages": [
+          {
+            "html": "<h2>Summary</h2><p>Revenue rose 12%</p><table><tr><th>Item</th><th>Q3</th></tr><tr><th>Revenue</th><td>4.2</td></tr></table><h2>Outlook</h2><footer>Confidential</footer>",
+            "blocks": [
+              {
+                "label": "heading",
+                "bbox": [
+                  0,
+                  0,
+                  1,
+                  0.1
+                ],
+                "text": "Summary"
+              }
+            ]
+          }
+        ]
+      },
+      "note-p1": {
+        "error": "simulated parser timeout"
+      }
+    }
+  }
+}

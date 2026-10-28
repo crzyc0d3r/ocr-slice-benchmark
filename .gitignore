@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.pytest_cache/
+reports/
+runs/
+data/
+*.pdf
+*.png
+*.parquet

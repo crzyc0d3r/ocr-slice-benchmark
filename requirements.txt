@@ -1,0 +1,2 @@
+omni-parse-bench @ git+https://github.com/datalab-to/omni_parse_bench.git@c4e40e352cfb84ec896a01c2788b3a650dd847a3
+omni-bench-core==0.10.1

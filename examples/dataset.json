@@ -1,0 +1,281 @@
+{
+  "description": "Synthetic three-document fixture; outputs are simulated to exercise text, tables, layout and failure accounting. These are not real OCR model results.",
+  "pages": [
+    {
+      "page_id": "ledger-p1",
+      "document": "ledger",
+      "gold": {
+        "tests": [
+          {
+            "id": "ledger-presence",
+            "test_type": "present",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "Latn",
+              "eng"
+            ],
+            "args": {
+              "content": {
+                "text": "Revenue rose 12%",
+                "max_diffs": 0
+              }
+            },
+            "settings": {}
+          },
+          {
+            "id": "ledger-order",
+            "test_type": "order",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "multi_column",
+              "eng"
+            ],
+            "args": {
+              "before": {
+                "text": "Summary",
+                "max_diffs": 0
+              },
+              "after": {
+                "text": "Outlook",
+                "max_diffs": 0
+              }
+            },
+            "settings": {}
+          },
+          {
+            "id": "ledger-repeat",
+            "test_type": "repeat",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "header_footer"
+            ],
+            "args": {
+              "content": {
+                "text": "Confidential",
+                "max_diffs": 0
+              }
+            },
+            "settings": {
+              "expected_count": 1
+            }
+          },
+          {
+            "id": "ledger-cell",
+            "test_type": "table_cell",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "table",
+              "eng"
+            ],
+            "args": {
+              "cell": {
+                "text": "4.2",
+                "max_diffs": 0
+              },
+              "top_heading": {
+                "text": "Q3",
+                "max_diffs": 0
+              },
+              "left_heading": {
+                "text": "Revenue",
+                "max_diffs": 0
+              }
+            },
+            "settings": {}
+          },
+          {
+            "id": "ledger-layout",
+            "test_type": "layout_kind",
+            "output_type": "blocks",
+            "derivation": "authored",
+            "tags": [
+              "heading"
+            ],
+            "args": {
+              "content": {
+                "text": "Summary",
+                "max_diffs": 0,
+                "place": [
+                  [
+                    0.1,
+                    0.02,
+                    0.4,
+                    0.08
+                  ]
+                ]
+              }
+            },
+            "settings": {
+              "kind": "heading"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "page_id": "note-p1",
+      "document": "field-note",
+      "gold": {
+        "tests": [
+          {
+            "id": "note-presence",
+            "test_type": "present",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "handwriting",
+              "eng"
+            ],
+            "args": {
+              "content": {
+                "text": "Sample stable at 20 C",
+                "max_diffs": 0
+              }
+            },
+            "settings": {}
+          },
+          {
+            "id": "note-order",
+            "test_type": "order",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "handwriting",
+              "eng"
+            ],
+            "args": {
+              "before": {
+                "text": "Observation",
+                "max_diffs": 0
+              },
+              "after": {
+                "text": "Follow-up",
+                "max_diffs": 0
+              }
+            },
+            "settings": {}
+          },
+          {
+            "id": "note-repeat",
+            "test_type": "repeat",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "handwriting"
+            ],
+            "args": {
+              "content": {
+                "text": "Check calibration",
+                "max_diffs": 0
+              }
+            },
+            "settings": {
+              "expected_count": 1
+            }
+          },
+          {
+            "id": "note-layout",
+            "test_type": "layout_kind",
+            "output_type": "blocks",
+            "derivation": "authored",
+            "tags": [
+              "heading",
+              "handwriting"
+            ],
+            "args": {
+              "content": {
+                "text": "Observation",
+                "max_diffs": 0,
+                "place": [
+                  [
+                    0.1,
+                    0.02,
+                    0.4,
+                    0.08
+                  ]
+                ]
+              }
+            },
+            "settings": {
+              "kind": "heading"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "page_id": "form-p1",
+      "document": "expense-form",
+      "gold": {
+        "tests": [
+          {
+            "id": "form-value",
+            "test_type": "present",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "form",
+              "eng"
+            ],
+            "args": {
+              "content": {
+                "text": "Total paid 125.00",
+                "max_diffs": 0
+              }
+            },
+            "settings": {}
+          },
+          {
+            "id": "form-repeat",
+            "test_type": "repeat",
+            "output_type": "html",
+            "derivation": "authored",
+            "tags": [
+              "form"
+            ],
+            "args": {
+              "content": {
+                "text": "Approved",
+                "max_diffs": 0
+              }
+            },
+            "settings": {
+              "expected_count": 1
+            }
+          },
+          {
+            "id": "form-layout",
+            "test_type": "layout_kind",
+            "output_type": "blocks",
+            "derivation": "authored",
+            "tags": [
+              "heading",
+              "form"
+            ],
+            "args": {
+              "content": {
+                "text": "Expense claim",
+                "max_diffs": 0,
+                "place": [
+                  [
+                    0.1,
+                    0.02,
+                    0.4,
+                    0.08
+                  ]
+                ]
+              }
+            },
+            "settings": {
+              "kind": "heading"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
